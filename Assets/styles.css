@@ -56,7 +56,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    
     margin-top: 0;
     flex-grow: 2;
 }
@@ -67,17 +67,26 @@
 }
 
 #work .box .grow-item {
+    flex-grow: 1;
     height: 100%;
-}
+    max-width: 997px;
+    margin-left: 6px;
+ }
 
-#work .box img {
+ #work .box .fourimg {
+     display: flex;
+     position: relative;
+     flex-wrap: wrap;
+ }
+
+#work .box .fourimg img{
     list-style: none;
     display: block;
-    background-color: aqua;
     height: 300px;
     margin: 6px;
     flex: 1;
     justify-content: space-evenly;
+    
     
 }
 

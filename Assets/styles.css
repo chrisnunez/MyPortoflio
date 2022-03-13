@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* Navigation bar. Includes about me, work and contact along with my name on the left */
 .navbar {
     background-color: rgb(39, 39, 41);
     margin: 0;
@@ -19,7 +19,7 @@
     list-style: none;
     text-decoration: none;
 }
-
+/* My name on the left is bigger on the navbar */
 .nav-items:first-child {
     border-top: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -27,17 +27,35 @@
     text-decoration: none;
 }
 
+/* Nav hover grey */
 .nav-items:hover {
     color: grey;
     transition: color .5s;
 }
 
-.img-abtme {
-    
+/* Self image container. Contained in two divs because of circle pic. */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
 }
 
+.image-abtme {
+    height: 150px;
+    width: 150px;
+}
+
+.image-abtme img{
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* About me section. H1, P */
 #about-me h1 {
-    margin-top: 100px;
+    margin-top: 51px;
     padding: 10px;
     text-align: center;
 }
@@ -47,6 +65,7 @@
     margin-bottom: 119px;
 }
 
+ /* Work title in own div. */
 .work-title {
     background-color: rgb(240, 240, 240);
     margin-top: 20px;
@@ -60,6 +79,7 @@
     position: absolute;
 }
 
+/* Container for body of work. */
 .box {
     background-color: rgb(240, 240, 240);
     display: flex;
@@ -71,12 +91,12 @@
     padding-top: 50px;
 
 }
-
+/* Main image title centered */
 .text {
     text-align: center;
     margin: 20px;
 }
-
+/* Main image container */
 .box-container a {
     margin-left: 20px;
     margin-right: 6px;
@@ -87,6 +107,7 @@
 
 }
 
+/* Two by Two container */
  .fourimg-main {
      display: flex;
      flex-wrap: wrap;
@@ -95,12 +116,12 @@
      align-items: center;
  }
 
-
 .fourimg img {
     margin: 6px;
     display: block;
 }
 
+/* Four image title */
 .fourimg-text {
     text-align: center;
     margin: 15px;
@@ -112,6 +133,7 @@
     border-radius: 10px;
 }
 
+/* Footer section */
 .btmfooter {
     display: flex;
     justify-content: space-evenly;
@@ -129,26 +151,13 @@
 
 
 
-
-@media (max-width: 375px) {
-    * {
-        min-width: 667px;
-    }
-    
-}
-
-
-
-
-
-
-
 @media (max-width: 600px) {
-
+/* navbar set to column when size is smaller */
     .navbar {
         flex-direction: column;
 
     }
+
     .nav-items {
         display: block;
         border-top: 1px solid white;
@@ -157,11 +166,8 @@
         padding: 0.5rem;
 
     }
-    .nav-items:first-child {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
+    
+/* about me flexed to column */
     #about-me .container {
         flex-direction: column;
     }
@@ -169,23 +175,6 @@
     #about-me h1 {
         margin-bottom: 0;
 
-    }
-
-    .work-title .box {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .box {
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-
-    .box .main-image {
-        height: 600px;
-        margin-bottom: 6px;
-        margin-right: 18px;
     }
 
     .btmfooter {
@@ -197,12 +186,3 @@
     }
 
 }
-
-  /* @media (max-width: 1230px) {
-
-    .box .main-image {
-        height: 600px;
-        margin-bottom: 6px;
-        margin-right: 18px;
-    } */
-/* } */

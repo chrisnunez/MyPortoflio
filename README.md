@@ -2,5 +2,5 @@ This is my first project learning HTML and CSS. You will find that the link to m
 
 https://chrisnunez.github.io/MyPortoflio/
 
-![Website Image](../assets/Images/website-img.pdf)
+![Website Image](/Assets/Images/website-img.png)
 
